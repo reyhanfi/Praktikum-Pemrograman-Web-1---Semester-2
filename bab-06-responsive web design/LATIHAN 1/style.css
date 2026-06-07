@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: 0.5s;
+}
+
+/* Desktop */
+body {
+  background-color: white;
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
