@@ -1,0 +1,56 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <title>Form Kursus</title>
+        </head>
+        <body>
+                <fieldset>
+                        <legend>Form Pendaftaran Kursus</legend>
+
+                        Nama :
+                        <input type="text" value="Budi"><br><br>
+
+                        Umur :
+                        <input type="number" value="20"><br><br>
+
+                        Bidang :
+
+                        <input list="kursus">
+                        <datalist id="kursus">
+                                <option value="Web Development">
+                                <option value="Artificial Intelligence">
+                                <option value="Mobile Programming">
+                        </datalist>
+
+                        <br><br>
+
+                        <input type="submit" value="Daftar">
+                </fieldset>
+                <br><br>
+                <h3>Contoh SVG</h3>
+                <svg width="200" height="200">
+
+                        <polygon points="100,10 40,180 160,180"
+                        style="fill:green;stroke:black;stroke-width:2"/>
+
+                </svg>
+                <br><br>
+                <h3>Contoh Canvas</h3>
+
+                <canvas id="kanvas" width="200" height="200"
+                style="border:1px solid black">
+                </canvas>
+
+                <script>
+
+                        var c = document.getElementById("kanvas");
+                        var ctx = c.getContext("2d");
+
+                        ctx.fillRect(50,50,100,100);
+
+                        ctx.font = "16px Arial";
+                        ctx.fillText("Belajar Web",40,180);
+
+                </script>
+        </body>
+        </html>
